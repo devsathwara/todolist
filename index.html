@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="todolist">
+           <label class="ml">My ToDo's</label>
+           <div class="tasklist hidden" id="tasklist">
+            <div class="task" id="task1">
+                <input type="checkbox" id="task" name="task">
+                <label for="task" class="taskname">task name</label>
+                <label for="task" class="taskdesc">task description</label>
+                <label for="task" class="red">Due Date:</label>
+            </div>
+         
+           </div>
+           <div class="content-list" id="content">
+            <div class="img">
+                <img src="/img/todolist.jpg" class="img">
+            </div>
+           <div class="content">
+            <h2>You have no Task left</h2>
+            <p class="para">You have no task today please add new task for today</p>
+           </div>
+            
+           </div>
+            </div>
+            <div class="addtask">
+                <label class="label-head">Add Task</label>
+                 <center>
+                  
+                <input type="text" name="text" class="input" placeholder="Task Name" id="tname"><br>
+                <input type="text" name="text" class="input" placeholder="Task Description" id="tdesc"><br>
+                <input type="datetime-local" name="text" class="input" placeholder="Due Date" id="date">
+          
+            <button onclick="return addtask()">
+                <span class="span-mother">
+                    <span>A</span>
+                    <span>D</span>
+                    <span>D</span>
+                    <span>T</span>
+                    <span>A</span>
+                    <span>S</span>
+                    <span>K</span>
+                </span>
+                <span class="span-mother2">
+                    <span>A</span>
+                    <span>D</span>
+                    <span>D</span>
+                    <span>T</span>
+                    <span>A</span>
+                    <span>S</span>
+                    <span>K</span>
+                </span>
+              </button>
+            </center>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+
+</html>
